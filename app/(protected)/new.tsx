@@ -24,13 +24,16 @@ const NewPostScreen = () => {
 
         <TextInput
           placeholder='What is on your mind?'
-          className='text-white text-lg placeholder:text-gray-500'
+          className='text-white text-lg'
           multiline
+          value={text}
+          placeholderTextColor='gray'
+          onChangeText={setText}
           numberOfLines={4}
         />
 
         <View className='mt-auto'>
-          <Pressable onPress={() => console.log("Post: ")} className='bg-white self-end rounded-full px-4 p-1'>
+          <Pressable onPress={() => console.log("Post: ", text)} className='bg-white self-end rounded-full px-4 p-1'>
             <Text className='text-black font-bold'>Post</Text>
           </Pressable>
         </View>
