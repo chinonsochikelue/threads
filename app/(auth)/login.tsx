@@ -68,10 +68,10 @@ export default function LoginScreen() {
     return (
         <View className='flex items-center justify-center'>
             <ScrollView className='mb-4'>
-                <KeyboardAvoidingView
+                {/* <KeyboardAvoidingView
                     className="flex-1 bg-black"
                     behavior={Platform.OS === 'ios' ? 'padding' : undefined}
-                >
+                > */}
                     <View className="flex-1 justify-center px-6">
                         {/* Threads Logo and Title */}
                         <View className="items-center mt-10 mb-10">
@@ -138,7 +138,7 @@ export default function LoginScreen() {
                             </View>
                         </View>
                     </View>
-                </KeyboardAvoidingView>
+                {/* </KeyboardAvoidingView> */}
             </ScrollView>
         </View>
     )

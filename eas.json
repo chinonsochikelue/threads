@@ -12,10 +12,23 @@
       "distribution": "internal"
     },
     "production": {
-      "autoIncrement": true
+      "autoIncrement": true,
+      "android": {
+        "buildType": "apk" 
+      },
+      "ios": {
+        "simulator": false
+      }
     }
   },
   "submit": {
-    "production": {}
+    "production": {
+      "android": {
+        "serviceAccountKeyPath": "./path-to-google-service-account.json"
+      },
+      "ios": {
+        "appleId": "your-apple-id@example.com"
+      }
+    }
   }
 }

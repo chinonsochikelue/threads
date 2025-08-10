@@ -44,6 +44,12 @@ threads-clone/
 ├── app/         # App screens (Home, Profile, Post Details, etc.)  
 ├── assets/          # Images, fonts, icons  
 ├── utils/           # Helpers and configs  
+├── providers/           # Helpers and configs  
+├── services/           # posts and profile  services
+├── types/           # posts and profile types  
+├── lib/           # supabase lib
+├── hooks/           
+├── constants/           # colors    
 └── App.js           # App entry point
 ```
 
@@ -53,10 +59,10 @@ threads-clone/
 
 ```bash
 # Clone this repo
-git clone https://github.com/YOUR_USERNAME/threads-clone.git
+git clone https://github.com/chinonsochikelue/threads.git
 
 # Go into the project folder
-cd threads-clone
+cd threads
 
 # Install dependencies
 npm install
