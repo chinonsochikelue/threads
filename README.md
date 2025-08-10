@@ -41,15 +41,15 @@ Includes authentication, post creation, commenting, profile editing, and more.
 threads-clone/
 │
 ├── components/      # Reusable UI components  
-├── app/         # App screens (Home, Profile, Post Details, etc.)  
+├── app/             # App screens (Home, Profile, Post Details, etc.)  
 ├── assets/          # Images, fonts, icons  
 ├── utils/           # Helpers and configs  
 ├── providers/           # Helpers and configs  
-├── services/           # posts and profile  services
+├── services/        # posts and profile  services
 ├── types/           # posts and profile types  
-├── lib/           # supabase lib
+├── lib/             # supabase lib
 ├── hooks/           
-├── constants/           # colors    
+├── constants/       # colors    
 └── App.js           # App entry point
 ```
 
