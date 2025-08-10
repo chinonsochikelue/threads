@@ -7,11 +7,10 @@ import SupabaseImage from './SupabaseImage';
 import { Feather, Ionicons } from '@expo/vector-icons';
 import { supabase } from '@/lib/supabase';
 
-export default function ProfileHeader() {
+export default function PostProfileHeader({profile}: any) {
   const { user } = useAuth();
 
   const {
-    data: profile,
     isLoading,
     error,
   } = useQuery({
