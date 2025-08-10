@@ -1,5 +1,6 @@
 import { router, Tabs } from 'expo-router';
 import { Feather } from '@expo/vector-icons';
+import { Image } from 'react-native';
 
 export default function TabsLayout() {
   return (
@@ -9,12 +10,23 @@ export default function TabsLayout() {
       }}
     >
       <Tabs.Screen
-        name='(home)'
+        name="(home)"
         options={{
-          title: 'Home',
-          headerShown: false,
+          headerShown: true,
+          headerTitle: () => (
+            <Image
+              source={require('@/assets/images/icon.png')} // replace with your Threads-like logo
+              style={{ width: 120, height: 100, resizeMode: 'contain', marginTop: -80, marginBottom: -60 }}
+            />
+          ),
+          headerStyle: {
+            backgroundColor: '#000', // Threads dark background
+          },
+          headerShadowVisible: false, // Removes bottom border shadow
+          headerTitleAlign: 'center', // Logo centered
+          headerTintColor: '#fff', // Icons white
           tabBarIcon: ({ size, color }) => (
-            <Feather name='home' size={size} color={color} />
+            <Feather name="home" size={size} color={color} />
           ),
         }}
       />

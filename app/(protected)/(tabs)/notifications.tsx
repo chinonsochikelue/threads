@@ -1,12 +1,10 @@
-import { View, Text } from 'react-native'
-import React from 'react'
+import { Text } from 'react-native';
+import { schedulePushNotification } from '@/providers/NotificationsProvider';
 
-const notifications = () => {
+export default function NotificationsScreen() {
   return (
-    <View>
-      <Text>notifications</Text>
-    </View>
-  )
+    <Text onPress={schedulePushNotification} className='text-white'>
+      No notifications yet
+    </Text>
+  );
 }
-
-export default notifications
